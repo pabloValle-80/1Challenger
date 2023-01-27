@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div class="encriptador-container">
+      <header>
+        <img src="imagenes/Logo.png" alt="Logo" class="logo" />
+      </header>
+      <div class="flex-container">
+        <main>
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aquí"
+            class="text-ingrese"
+            id="encriptarArea"
+          ></textarea>
+
+          <div class="informacion">
+            <h4>
+              <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+              Sólo letras minúsculas y sin acento
+            </h4>
+          </div>
+          <div class="btn">
+            <button class="btnEncriptar" id="btn-encriptar"  onclick="encriptar">Encriptar</button>
+            <button class="btnDesencriptar" id="btn-Desencriptar" onclick="desencriptar">Desencriptar</button>
+          </div>
+        </main>
+        <aside>
+          <img
+            src="imagenes/Muñeco.png"
+            alt="imagen-muñeco"
+            class="img-muñeco"
+            id="muñeco"
+          />
+
+          <section class="msg-box">
+            <textarea name="msg" cols="20" rows="10" class="text-input-salida" id="msg"></textarea>
+            <p class="mensaje" id="msg-ningun">Ningún mensaje fue encontrado</p>
+            <p class="mensaje2" id="msg-ingrese">"Ingrese el texto que desea encriptar o desencriptar"</p> 
+          </section>
+        
+          <div class="copiar" id="copiar">
+            <button class="btncopiar" id="btnCopiar" >Copiar</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;Copyright 2023- Pablo Valle</p>
+    </footer>
+    <script src="encriptar.js"></script>
+  </body>
+  
+</html>
